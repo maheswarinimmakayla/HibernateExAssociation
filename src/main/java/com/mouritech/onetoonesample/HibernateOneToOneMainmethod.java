@@ -8,13 +8,13 @@ import com.mouritech.onetoonesample.model.Stock_Details;
 
 public class HibernateOneToOneMainmethod {
 	public static void main(String[] args) {
-	String date = "28-01-2022";
+	String date = "29-01-2022";
 	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 	LocalDate listedDate = LocalDate.parse(date,formatter);
 	
-	Stock st = new Stock("dsds",3443L);
+	Stock st = new Stock("pen",343L);
     
-    Stock_Details std = new Stock_Details("samsung","samsungcom","bestcompany",listedDate);
+    Stock_Details std = new Stock_Details("sony","sony","bestcompany",listedDate);
     st.setStock_detils(std);
     
     StockDao sdao = new StockDao();
